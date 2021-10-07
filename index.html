@@ -10,65 +10,50 @@
 </head>
 <body>
 
-
+    <div class="header">
     <nav>
-        <ul class="liste">
-            <li class="item">Accueil</li>&nbsp&nbsp
-            <li class="item">Projet</li>&nbsp&nbsp
-            <li class="item">Services</li>&nbsp&nbsp
-            <li class="item">Contact</li>&nbsp&nbsp
+        <center>
+        <ul>
+            
+            <li><a href="#">Accueil</a></li>&nbsp&nbsp
+            <li><a href="#">Projet</a></li>&nbsp&nbsp
+            <li><a href="#">Services</a></li>&nbsp&nbsp
+            <li><a href="#">Contact</a></li>&nbsp&nbsp
+            
         </ul>
+    
+        <form>
+            <input type="search" name="q" placeholder="Recherche">
+        </form>
+    </center>
     </nav>
+    </div>
 
     <div class="home">
-        <h5>HELLO</h5>
-        </div>
+        <h5>HELLO</h5>  <p>Petite animation uniquement en css avec les keyframes</p>
+        <p>  La propriété animation est une propriété raccourcie qui permet de d'appliquer une animation entre des styles.</p>
 
-    <div>
-    <h1 id="id">Get Element By Id</h1>
-    <p class="class">Get Element By Class</p>
-    <p class="query">Query Selector</p>
-    <p class="all">Query Selector All</p>
+        <br><br>
+</div>
+
+<div> <p>Ici j'ai fait des tests pour pouvoir appeler chaque élément différemment : le 1er par son id , le second par sa classe , le 3 par son query selector et les 2 derniers par un query selector all </p>
+    <h1 id="id">Get Element By Id</h1>  <p>La méthode getElementById() de Document renvoie un objet  Element représentant l'élément dont la propriété  id correspond à la chaîne de caractères spécifiée.</p>
+    <p class="class">Get Element By Class</p> <p>Renvoie un objet de type tableau de tous les éléments enfants qui ont tous les noms de classe donnés.</p>
+    <p class="query">Query Selector</p> <p>La méthode querySelector() de l'interface Document retourne le premier Element dans le document correspondant au sélecteur - ou groupe de sélecteurs - spécifié(s), ou null si aucune correspondance n'est trouvée.</p>
+    <p class="all">Query Selector All</p> <p>La méthode querySelectorAll()  de Element renvoie une NodeList statique représentant une liste des éléments du document qui correspondent au groupe de sélecteurs spécifiés.</p>
     <p class="all">Query Selector All</p>
     <h2 class="title"></h2>
+
+    <p>Ici j'ai créer une fonction qui lorsque l'on passe la souris sur chacune des lettres la classe de la lettre en question change et apporte donc des modifications pour la lettre visée</p>
+    <p> La méthode forEach() permet d'exécuter une fonction donnée sur chaque élément du tableau.</p>
+    <p> La méthode Node.appendChild() ajoute un nœud à la fin de la liste des enfants d'un nœud parent spécifié. </p>
     
 </div>
-
-<div class="container">
-    <div class="container_content">
-        <div class="container_content_inner">
-            <div class="titre">
-                <h3>Our landing Page</h3>
-
-            </div>
-
-            <div class="paragraph">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                </p>
-
-            </div>
-            
-            <div class="btns">
-                <button class="btns_more">See more</button>
-            </div>
-
-        </div>
-
-    </div>
-<div class="container_outer_img">
-<div class="img-inner">
-    <img src="images/photo.jpg" class="container_img" alt="">
-</div>
-</div>
-
-</div>
-
 <br><br>
 
-    
+<p>Petite animation d'un carré qui disparait et réapparait quand on clique sur le bouton correspondant</p>
 
-
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="app.js"></script>
 <div id="square1" class="square">
 
@@ -76,6 +61,26 @@
 <button type="button" onclick="fadeOut()">Fade Out</button>
 <button type="button" onclick="fadeIn()">Fade In</button>
     
+<p>Pour mon click Anim j'ai créer une class nommé clickAnim qu'on appel lorsque l'on click n'importe ou sur le site grâce à une fonction en js qui appel en enfant "rond" qui appel à son tour la class clickAnim</p>
+<p>La règle @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. Cela permet de contrôler une animation plus finement que ce qu'on pourrait obtenir avec les transitions.</p>
+<div class="accueil">
     
+<h6>Apparement cette animation ne marche pas :(</h6>
+<div class="media-container">
+    <div class="media-btn"><img src="images/linkedin-logo.jpg" alt="icone" class="icones"></div>
+    <div class="media-btn"><img src="images/580b57fcd9996e24bc43c521.png.crdownload" alt="icone" class="icones"></div>
+    <div class="media-btn"><img src="images/Telecharger-Facebook.jpg" alt="icone" class="icones"></div>
+</div>
+<a href="#" class="btn">Découvrir</a> <p>Ici simple animation de hover pour faire changer de style mon bouton Découvrir</p>
+<p>Le :hoversélecteur est utilisé pour sélectionner des éléments lorsque vous passez la souris dessus.</p>
+</div>
+
+<br><br><br>
+<label for="pseudo"> <p>Rentrez un pseudo d'au moins 5 lettres</label>  <p>Ici je créer une animation qui change de couleur la bordure du label lorsque celui-ci contient 5 caractères</p>
+<input type="text" id="pseudo"><p>Dès que j'appuie sur une touche ca doit déclencher l'événement et passer la bordure en rouge quand on rentre moins de 5 caractères et en vert au delà de 5 caractères</p>
+
+<div class="pulse-anim"></div> <p>Ici j'ai fait une animation juste en css avec les keyframes en changeant à peine la dernière valeur de ma boxshadow ca donne en effet de "respiration" au rond</p>
+<div class="nope-anim"></div>
+       
 </body>
 </html>

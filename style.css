@@ -4,7 +4,44 @@ body{
     font-size: 15px;
     font-family: Arial;
     line-height: 1.5;
+    background-color: rgb(178, 216, 152);
     
+    
+}
+
+.header{
+    background-color: blue;
+    height: 80px;
+    margin: 10px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px;
+}
+
+ul li a{
+    color: white;
+    letter-spacing: 0.1rem;
+}
+
+ul li a:hover{
+    color: hsl(34, 100%, 51%);
+    text-decoration: underline;
+}
+
+.menu li{
+    float: left;
+    padding: 35px;
+}
+
+.menu li a{
+    text-decoration: none;
+}
+
+form{
+    padding: 35px;
 }
 
 
@@ -41,28 +78,8 @@ h2 span.hover{
     position:relative;
 }
 
-.anim-nav{
-    background: #333;
-    color: black;
-    border: 1px solid #f1f1f1;
-}
 
-nav {
-    width: 100%;
-    height: 70px;
-    background: transparent;
-    position: fixed;
-    transition: all 0.3s ease-out;
-}
 
-.liste {
-    width: 100%;
-    height: 100%;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .home {
     height: 100%;
@@ -78,9 +95,127 @@ h5 {
     padding-left: 100px;
     padding-top: 200px;
     color: #222;
+    animation: apparition 2s ease-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .item {
     margin: 0 10px;
     font-size: 22px;
 }
+
+.accueil{
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);    
+}
+
+h6{
+    font-size: 50px;
+    padding-top: 250px;
+    padding-left: 240px;
+}
+
+.media-container{
+    display: flex;
+    padding-left: 240px;
+    margin: 20px 0 40px 0;
+}
+
+.media-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.icones{
+    width: 27px;
+}
+
+.btn{
+    margin-left: 240px;
+    background: transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: 2px solid #333;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background: #333;
+    color: #f1f1f1;
+}
+
+.clickAnim{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #ff4e50, #f9d421);
+    position: absolute;
+    z-index: 9000;
+    transform: scale(0);
+    transform-origin: center;
+    animation: clickAnim 1s ease-in-out;
+}
+
+@keyframes clickAnim{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform:scale(2);
+        opacity: 1;
+    }
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+label{
+    margin-top: 35px;
+}
+input{
+    padding: 10px;
+    margin-bottom: 30px;
+    outline: none;
+    border: 3
+    px solid #000;
+}
+
+
+.pulse-anim{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #000;
+    margin: 100px auto 0;
+    box-shadow: 0 0 0 0 #000;
+    animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse {
+    to{
+        box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.01);
+    }
+    
+}
+

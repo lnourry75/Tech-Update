@@ -27,7 +27,7 @@ function hover(str) {
     });
 }
 
-hover('hover!');
+hover('style!');
 
 function fadeOut() {
     const square = document.getElementById('square1');
@@ -42,13 +42,32 @@ function fadeIn() {
     square.style.opacity = '1';
 }
 
-const navigation = document.querySelector('nav');
 
-window.addEventListener('scroll', () => {
-    
-    if(window.scrolly > 10){
-        navigation.classList.add('anim-nav');
+
+const txtAnim = document.querySelector('h6');
+
+new Typewriter(txtAnim, {
+
+})
+.typeString('Bonjour cest Louis')
+.pauseFor(300)
+.typeString('<strong>, Dev Full-Stack</strong>')
+.start()
+
+window.addEventListener('click',(e) => {
+    const rond = document.createElement('div');
+    rond.className = 'clickAnim';
+    rond.style.top = `${e.pageY - 50}px`;
+    rond.style.left = `${e.pageX - 50}px`;
+    document.body.appendChild(rond);
+})
+
+const validationInput = document.querySelector('input');
+
+validationInput.addEventListener('input', (e) => {
+    if(e.target.value.length >= 5) {
+        validationInput.style.borderColor = "green";
     } else {
-        navigation.classList.remove('anim-nav');
+        validationInput.style.borderColor = "red";
     }
 })
