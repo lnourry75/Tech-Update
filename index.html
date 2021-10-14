@@ -35,13 +35,13 @@
 
         <br><br>
 </div>
-
+<hr>
 <div> <p>Ici j'ai fait des tests pour pouvoir appeler chaque élément différemment : le 1er par son id , le second par sa classe , le 3 par son query selector et les 2 derniers par un query selector all </p>
     <h1 id="id">Get Element By Id</h1>  <p>La méthode getElementById() de Document renvoie un objet  Element représentant l'élément dont la propriété  id correspond à la chaîne de caractères spécifiée.</p>
     <p class="class">Get Element By Class</p> <p>Renvoie un objet de type tableau de tous les éléments enfants qui ont tous les noms de classe donnés.</p>
     <p class="query">Query Selector</p> <p>La méthode querySelector() de l'interface Document retourne le premier Element dans le document correspondant au sélecteur - ou groupe de sélecteurs - spécifié(s), ou null si aucune correspondance n'est trouvée.</p>
     <p class="all">Query Selector All</p> <p>La méthode querySelectorAll()  de Element renvoie une NodeList statique représentant une liste des éléments du document qui correspondent au groupe de sélecteurs spécifiés.</p>
-    <p class="all">Query Selector All</p>
+    <p class="all">Query Selector All</p><hr>
     <h2 class="title"></h2>
 
     <p>Ici j'ai créer une fonction qui lorsque l'on passe la souris sur chacune des lettres la classe de la lettre en question change et apporte donc des modifications pour la lettre visée</p>
@@ -50,7 +50,7 @@
     
 </div>
 <br><br>
-
+<hr>
 <p>Petite animation d'un carré qui disparait et réapparait quand on clique sur le bouton correspondant</p>
 
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -63,6 +63,7 @@
     
 <p>Pour mon click Anim j'ai créer une class nommé clickAnim qu'on appel lorsque l'on click n'importe ou sur le site grâce à une fonction en js qui appel en enfant "rond" qui appel à son tour la class clickAnim</p>
 <p>La règle @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. Cela permet de contrôler une animation plus finement que ce qu'on pourrait obtenir avec les transitions.</p>
+<hr>
 <div class="accueil">
     
 
@@ -73,14 +74,15 @@
 </div>
 <a href="#" class="btn">Découvrir</a> <p>Ici simple animation de hover pour faire changer de style mon bouton Découvrir</p>
 <p>Le :hoversélecteur est utilisé pour sélectionner des éléments lorsque vous passez la souris dessus.</p>
-</div>
+</div><hr>
 <p>Un élément positionné de façon absolue est un élément dont la propriété de position calculée est absolute ou fixed. Dans ce cas, les propriétés top, bottom, right et left indiquent les distances entre les bords de l'élément et les bords du bloc englobant</p>
 <p>La méthode toggle() (qui signifie basculer en anglais) de l'interface DOMTokenList supprime un jeton (token) donné de la liste et renvoie false. Si token n'existe pas, il est ajouté et la fonction renvoie true.</p>
 <p>La propriété tr permet de définir la transition entre deux états d'un élément. Les différents états peuvent être définis à l'aide de pseudo-classes telles que :hover ou :active ou être définis dynamiquement avec JavaScript.</p>
 <br><br><br>
+<hr>
 <label for="pseudo"> <p>Rentrez un pseudo d'au moins 5 lettres</label>  <p>Ici je créer une animation qui change de couleur la bordure du label lorsque celui-ci contient 5 caractères</p>
 <input type="text" id="pseudo"><p>Dès que j'appuie sur une touche ca doit déclencher l'événement et passer la bordure en rouge quand on rentre moins de 5 caractères et en vert au delà de 5 caractères</p>
-
+<hr>
 <div class="pulse-anim"></div> <p>Ici j'ai fait une animation juste en css avec les keyframes en changeant à peine la dernière valeur de ma boxshadow ca donne en effet de "respiration" au rond</p>
 <div class="nope-anim"></div>
 
@@ -90,6 +92,26 @@
     <div class="inner-circle"></div>
 
     </div>
-    </div>       
+    </div>
+    <hr>   
+<ul>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+</ul>
+<p>Ici je cible le 2e élément de la liste avec nth of type et je modifie sa couleur</p>
+
+<p>La pseudo-classe :nth-of-type() correspond à des éléments d'un type donné, en fonction de leur position au sein d'un groupe de frères et sœurs.</p>
+
+
+<ul>
+    <p>paragraph</p>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>four</li>
+    </ul>
+<p>La pseudo-classe :nth-child(an+b) permet de cibler un élément qui possède an+b-1 éléments voisins (au même niveau) avant lui dans l'arbre du document pour des valeurs entières n et qui possède un élément parent</p>
 </body>
 </html>
