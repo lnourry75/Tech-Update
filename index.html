@@ -65,22 +65,31 @@
 <p>La règle @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. Cela permet de contrôler une animation plus finement que ce qu'on pourrait obtenir avec les transitions.</p>
 <div class="accueil">
     
-<h6>Apparement cette animation ne marche pas :(</h6>
+
 <div class="media-container">
     <div class="media-btn"><img src="images/linkedin-logo.jpg" alt="icone" class="icones"></div>
-    <div class="media-btn"><img src="images/580b57fcd9996e24bc43c521.png.crdownload" alt="icone" class="icones"></div>
+    <div class="media-btn"><img src="images/Instagram_logo_2016.svg.png" alt="icone" class="icones"></div>
     <div class="media-btn"><img src="images/Telecharger-Facebook.jpg" alt="icone" class="icones"></div>
 </div>
 <a href="#" class="btn">Découvrir</a> <p>Ici simple animation de hover pour faire changer de style mon bouton Découvrir</p>
 <p>Le :hoversélecteur est utilisé pour sélectionner des éléments lorsque vous passez la souris dessus.</p>
 </div>
-
+<p>Un élément positionné de façon absolue est un élément dont la propriété de position calculée est absolute ou fixed. Dans ce cas, les propriétés top, bottom, right et left indiquent les distances entre les bords de l'élément et les bords du bloc englobant</p>
+<p>La méthode toggle() (qui signifie basculer en anglais) de l'interface DOMTokenList supprime un jeton (token) donné de la liste et renvoie false. Si token n'existe pas, il est ajouté et la fonction renvoie true.</p>
+<p>La propriété tr permet de définir la transition entre deux états d'un élément. Les différents états peuvent être définis à l'aide de pseudo-classes telles que :hover ou :active ou être définis dynamiquement avec JavaScript.</p>
 <br><br><br>
 <label for="pseudo"> <p>Rentrez un pseudo d'au moins 5 lettres</label>  <p>Ici je créer une animation qui change de couleur la bordure du label lorsque celui-ci contient 5 caractères</p>
 <input type="text" id="pseudo"><p>Dès que j'appuie sur une touche ca doit déclencher l'événement et passer la bordure en rouge quand on rentre moins de 5 caractères et en vert au delà de 5 caractères</p>
 
 <div class="pulse-anim"></div> <p>Ici j'ai fait une animation juste en css avec les keyframes en changeant à peine la dernière valeur de ma boxshadow ca donne en effet de "respiration" au rond</p>
 <div class="nope-anim"></div>
-       
+
+
+<div class="container2">
+    <div class="toggle-btn" onclick="this.classList.toggle('active')">
+    <div class="inner-circle"></div>
+
+    </div>
+    </div>       
 </body>
 </html>
